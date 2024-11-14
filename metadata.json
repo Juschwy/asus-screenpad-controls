@@ -1,7 +1,7 @@
 {
   "name": "ASUS Screenpad+ Controls",
-  "description": "tbd",
-  "uuid": "asus-screenpadpp-controls@juschwy.ch",
+  "description": "A simple button and slider in the quick settings to control ASUS Screenpad+ with brightnessctl",
+  "uuid": "asus-screenpad-controls@juschwy",
   "shell-version": [
     "47"
   ]
