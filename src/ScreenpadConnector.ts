@@ -1,5 +1,6 @@
 import GLib from "@girs/glib-2.0";
 
+// TODO: improve with this things https://github.com/admtrv/ScreenPadian/blob/main/main.cpp#L10
 
 const screenpadBrightnessCtl = "brightnessctl --device asus_screenpad"
 const decoder = new TextDecoder('utf-8');
