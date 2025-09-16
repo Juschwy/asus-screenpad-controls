@@ -1,4 +1,4 @@
-import GLib from "@girs/glib-2.0";
+import GLib from "gi://GLib";
 
 // TODO: improve with this things https://github.com/admtrv/ScreenPadian/blob/main/main.cpp#L10
 

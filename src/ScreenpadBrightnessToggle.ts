@@ -1,8 +1,8 @@
 import GObject from "gi://GObject";
-import {gettext as _} from "@girs/gnome-shell/extensions/extension";
+import {gettext as _} from "resource:///org/gnome/shell/extensions/extension.js";
 import {getActualBrightness, setBrightness} from "./ScreenpadConnector.js";
 import {ScreenpadSliderItem} from "./ScreenpadSliderItem.js";
-import {QuickMenuToggle} from "@girs/gnome-shell/ui/quickSettings";
+import {QuickMenuToggle} from "resource:///org/gnome/shell/ui/quickSettings.js";
 
 
 export class ScreenpadBrightnessToggle extends QuickMenuToggle {

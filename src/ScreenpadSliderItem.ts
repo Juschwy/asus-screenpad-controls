@@ -1,7 +1,7 @@
 import GObject from "gi://GObject";
-import {gettext as _} from "@girs/gnome-shell/extensions/extension";
-import {PopupBaseMenuItem} from "@girs/gnome-shell/ui/popupMenu";
-import {Slider} from "@girs/gnome-shell/ui/slider";
+import {gettext as _} from "resource:///org/gnome/shell/extensions/extension.js";
+import {PopupBaseMenuItem} from "resource:///org/gnome/shell/ui/popupMenu.js";
+import {Slider} from "resource:///org/gnome/shell/ui/slider.js";
 import Clutter from 'gi://Clutter';
 
 export class ScreenpadSliderItem extends PopupBaseMenuItem {
