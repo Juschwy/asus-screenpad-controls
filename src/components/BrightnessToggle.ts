@@ -1,12 +1,12 @@
 import GObject from "gi://GObject";
 import {gettext as _} from "resource:///org/gnome/shell/extensions/extension.js";
-import {getActualBrightness, setBrightness} from "./ScreenpadConnector.js";
-import {ScreenpadSliderItem} from "./ScreenpadSliderItem.js";
+import {getActualBrightness, setBrightness} from "../connectors/BrightnessConnector.js";
+import {BrightnessSliderItem} from "./BrightnessSliderItem.js";
 import {QuickMenuToggle} from "resource:///org/gnome/shell/ui/quickSettings.js";
 
 
-export class ScreenpadBrightnessToggle extends QuickMenuToggle {
-    private readonly _sliderItem: ScreenpadSliderItem
+export class BrightnessToggle extends QuickMenuToggle {
+    private readonly _sliderItem: BrightnessSliderItem
     private readonly _sliderItemChangedId: number;
 
     static {
@@ -23,7 +23,7 @@ export class ScreenpadBrightnessToggle extends QuickMenuToggle {
             console.log("Turning off not implemented yet")
         });
 
-        this._sliderItem = new ScreenpadSliderItem();
+        this._sliderItem = new BrightnessSliderItem();
         this.menu.box.add_child(this._sliderItem);
         const sliderAccessible = this._sliderItem._slider.get_accessible();
         sliderAccessible.set_parent(this.menu.box.get_accessible());

@@ -1,16 +1,16 @@
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
-import {ScreenpadIndicator} from "./ScreenpadIndicator.js";
+import {BrightnessIndicator} from "./components/BrightnessIndicator.js";
 import {Extension} from "resource:///org/gnome/shell/extensions/extension.js";
 import {Button} from "resource:///org/gnome/shell/ui/panelMenu.js";
 
 export default class ScreenpadControlsExtension extends Extension {
-    private _screenpadIndicator: ScreenpadIndicator | undefined;
+    private _screenpadIndicator: BrightnessIndicator | undefined;
 
 
     enable() {
         console.log("enable asus-screenpad-controls")
 
-        this._screenpadIndicator = new ScreenpadIndicator();
+        this._screenpadIndicator = new BrightnessIndicator();
         Main.panel.statusArea.quickSettings.addExternalIndicator(this._screenpadIndicator as unknown as Button);
     }
 

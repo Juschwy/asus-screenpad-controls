@@ -1,8 +1,8 @@
 import GObject from "gi://GObject";
-import {ScreenpadBrightnessToggle} from "./ScreenpadBrightnessToggle.js";
+import {BrightnessToggle} from "./BrightnessToggle.js";
 import {SystemIndicator} from "resource:///org/gnome/shell/ui/quickSettings.js";
 
-export class ScreenpadIndicator extends SystemIndicator{
+export class BrightnessIndicator extends SystemIndicator{
 
     static {
         GObject.registerClass(this)
@@ -11,6 +11,6 @@ export class ScreenpadIndicator extends SystemIndicator{
     constructor() {
         super()
 
-        this.quickSettingsItems.push(new ScreenpadBrightnessToggle());
+        this.quickSettingsItems.push(new BrightnessToggle());
     }
 }

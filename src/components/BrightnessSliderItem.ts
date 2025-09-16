@@ -4,7 +4,7 @@ import {PopupBaseMenuItem} from "resource:///org/gnome/shell/ui/popupMenu.js";
 import {Slider} from "resource:///org/gnome/shell/ui/slider.js";
 import Clutter from 'gi://Clutter';
 
-export class ScreenpadSliderItem extends PopupBaseMenuItem {
+export class BrightnessSliderItem extends PopupBaseMenuItem {
     private readonly _sliderChangedId: number;
     readonly _slider: Slider;
 
