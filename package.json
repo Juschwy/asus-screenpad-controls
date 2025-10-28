@@ -1,0 +1,27 @@
+{
+  "name": "asus-screenpad-controls",
+  "version": "0.0.0",
+  "description": "A Gnome Extension to control the Screenpad+",
+  "type": "module",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juschwy/asus-screenpad-controls"
+  },
+  "author": "Juschwy",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/juschwy/asus-screenpad-controls/issues"
+  },
+  "homepage": "https://github.com/juschwy/asus-screenpad-controls#readme",
+  "sideEffects": false,
+  "devDependencies": {
+    "eslint": "^9.35.0",
+    "eslint-plugin-jsdoc": "^57.0.8",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@girs/gjs": "^4.0.0-beta.5",
+    "@girs/gnome-shell": "^48.0.4"
+  }
+}
